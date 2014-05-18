@@ -1,0 +1,29 @@
+{
+  "name": "ex_mvc4",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "app.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.2.0",
+    "compression": "^1.0.2",
+    "consolidate": "^0.10.0",
+    "dustjs-helpers": "^1.2.0",
+    "dustjs-linkedin": "^2.3.5",
+    "express": "4.2.0",
+    "method-override": "^1.0.1",
+    "mongoose": "3.8.9",
+    "morgan": "^1.0.1",
+    "serve-favicon": "^2.0.0"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-develop": "~0.2.2",
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt-contrib-compass": "~0.6.0",
+    "request": "~2.27.0",
+    "time-grunt": "~0.1.1",
+    "load-grunt-tasks": "~0.2.0"
+  }
+}

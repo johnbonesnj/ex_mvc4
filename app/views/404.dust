@@ -1,0 +1,12 @@
+{>layout/}
+{<content}
+
+<div class="container">
+  <div class="title">
+    <div class="error">
+      <span class="glyphicon glyphicon-remove"></span>
+      <p class="lead">Error 404</p>
+    </div>
+  </div>
+</div>
+{/content}

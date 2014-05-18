@@ -1,0 +1,4 @@
+{>layout/}
+{<content}
+  <h2>home/index.dust</h2>
+{/content}
