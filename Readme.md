@@ -29,36 +29,36 @@ Runs like a typical express app:
 Nothing yet, sorry. Feel free to fork it and add them yourself.
 
 ## Directory Layout
-
-    app.js              --> main express app
-    package.json        --> config and dependencies
+    app/
+      controllers/      --> controller files
+        home.js         --> main controller
+      models/           --> model files
+        article.js      --> example model
+      views/
+        home/           --> folder to correspond to controller
+          index.dust    --> main page for app
+        404.dust        --> error page
+        layout.dust     --> main layout which wraps all other views
+        navbar.dust     --> bootstrap navbar with dust code for active pages
+    config/             --> config files
+      config.js         --> basic config, environment setup
+      express.js        --> Express 4 dependencies and config
+      routes.js         --> routes for app, map routes to controllers
     public/             --> static files
       components/       --> bower components (after you run `bower install`)
       css/              --> css files
-        app.css         --> default stylesheet
-      img/              --> image files
+        main.css        --> default stylesheet
+      img/              --> image files (favicon)
       js/               --> javascript files
-        app.js          --> declare top-level app module
-        controllers.js  --> application controllers
-        directives.js   --> custom angular directives
-        filters.js      --> custom angular filters
-        services.js     --> custom angular services
-        lib/            --> angular and 3rd party JavaScript libraries
-          angular/
-            angular.js            --> the latest angular js
-            angular.min.js        --> the latest minified angular js
-            angular-*.js          --> angular add-on modules
-            version.txt           --> version number
-    routes/
-      api.js            --> route for serving JSON
-      index.js          --> route for serving HTML pages and partials
-    views/
-      index.jade        --> main page for app
-      layout.jade       --> doctype, title, head boilerplate
-      partials/         --> angular view partials (partial jade templates)
-        partial1.jade
-        partial2.jade
 
+    .bowerrc            --> Bower config
+    .gitignore          --> Git ignore file
+    .npmignore          --> NPM ignore file
+    app.js              --> main express app
+    bower.json          --> Bower dependencies
+    Gruntfile.js        --> Grunt config for running app with livereload
+    package.json        --> config and dependencies
+    Readme.md           --> what you are currently reading
 
 
 ## Example App
